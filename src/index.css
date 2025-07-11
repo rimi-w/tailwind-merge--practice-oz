@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #a2df9a;
+}
+
+@layer components {
+  .display {
+    width: 250px;
+    height: 150px;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff62;
+  }
+
+  .btnPlus {
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #528576;
+    margin: 0 5px;
+
+    &:hover {
+      background-color: #54ef4f;
+    }
+  }
+
+  .btnMinus {
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ac8263;
+    margin: 0 5px;
+
+    &:hover {
+      background-color: #efc74f;
+    }
+  }
+}
